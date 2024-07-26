@@ -33,9 +33,3 @@ e/c : increase/decrease only angular speed by 10%
 
 CTRL-C to quit
 ```
-
-# Twist with header
-Publishing a `TwistStamped` message instead of `Twist` can be enabled with the `stamped` private parameter. Additionally the `frame_id` of the `TwistStamped` message can be set with the `frame_id` private parameter.
-```
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py _stamped:=True _frame_id:=base_link
-```
